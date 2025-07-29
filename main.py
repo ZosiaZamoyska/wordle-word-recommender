@@ -27,7 +27,7 @@ def is_valid_answer(word):
             displaced_count += 1
 
     return displaced_count >= len(all_displaced_letters)
-
+print(valid_solutions)
 for round in range(6):
     print('Enter your guess:')
     guess = input()
@@ -47,5 +47,7 @@ for round in range(6):
         if m == '2':
             correct_letters[idx] = guess[idx]
 
-    print(is_valid_answer('mocks'))
-    print(is_valid_answer('ckoto'))
+    #print(is_valid_answer('aback'))
+    print(valid_solutions[valid_solutions['word'].apply(is_valid_answer)])
+    #print(valid_guesses[valid_guesses['word'].apply(is_valid_answer)])
+    #print(valid_solutions)
